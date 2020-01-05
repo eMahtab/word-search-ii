@@ -148,10 +148,15 @@ public static void main(String[] args) {
 			   {'i','h','k','r'},
 			   {'i','f','l','v'}
 		     };
-	String[] words = { "oath","oat" , "pea","pear", "eat","rain" };
+	String[] words = { "oath", "oat", "pea", "pear", "eat", "rain" };
 	System.out.println(findWords(board, words));
 }
 ```
+#### Trie of words : ["oath", "oat", "pea", "pear", "eat", "rain"]
+
+![Trie of words](trie.PNG?raw=true "Trie of words")
+
+
 The output is `[oat, oath, eat]` which is correct.
 
 ## References
