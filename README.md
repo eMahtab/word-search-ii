@@ -158,7 +158,7 @@ public static void main(String[] args) {
 
 ### In the above image, * indicates the `TrieNode` where a word ends e.g. eat, oat, oath, pea, pear, rain.
 
-The output is `[oat, oath, eat]` which is correct.
+The output is `[oat, oath, eat]` which is correct. Because only these 3 words exist in the baord.
 
 ## References
 1. https://www.youtube.com/watch?v=5Ha1nJ5rjrE
