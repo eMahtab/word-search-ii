@@ -49,6 +49,39 @@ e.g. For example if we are given words `['centrifugal' , .... , 'centrifugalize'
 ## 😮 Lets try : Trie 😮
 
 Trie is a perfect fit for solving this problem efficiently.
+We will build a trie with the given words array, so lets define our `TrieNode` class 
+
+```java
+static class TrieNode {
+		TrieNode[] children;
+		String word;
+		public TrieNode() {
+			children = new TrieNode[26];
+			word = null;
+		}
+}
+```
+**The `word` property reflects whether the `TrieNode` marks the end of a word or not. If word property is null, it means it doesn't mark the end of a word, otherwise is its not null it means, it marks the end of a word, and in that case we will set the `word` property to that particular word for which it marks the end.**
 
 
+### Build Trie :
+We will have a `buildTrie()` method which will build the Trie with all the given words.
+
+```java
+private static void buildTrie(TrieNode root, String[] words) {
+		for(String s : words) {
+			TrieNode node = root;
+			for(char c : s.toCharArray()) {
+				int index = c - 'a';
+				if(node.children[index] == null) {
+					node.children[index] = new TrieNode();
+				}
+				node = node.children[index];
+			}
+			node.word = s;
+		}
+}
+```
+
+From the `findWords()` we will call the `buildTrie()`
 
