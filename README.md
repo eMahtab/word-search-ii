@@ -49,6 +49,7 @@ e.g. For example if we are given words `['centrifugal' , .... , 'centrifugalize'
 ## 😮 Lets try : Trie 😮
 
 Trie is a perfect fit for solving this problem efficiently.
+
 We will build a trie with the given words array, so lets define our `TrieNode` class 
 
 ```java
@@ -61,7 +62,7 @@ static class TrieNode {
 		}
 }
 ```
-**The `word` property reflects whether the `TrieNode` marks the end of a word or not. If word property is null, it means it doesn't mark the end of a word, otherwise is its not null it means, it marks the end of a word, and in that case we will set the `word` property to that particular word for which it marks the end.**
+**The `word` property reflects whether the `TrieNode` marks the end of a word or not. If word property is null, it means it doesn't mark the end of a word, otherwise if its not null it means, it marks the end of a word, and in that case we will set the `word` property to that particular word for which it marks the end.**
 
 
 ### Build Trie :
