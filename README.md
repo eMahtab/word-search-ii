@@ -28,3 +28,10 @@ Note:
 Before you try to solve this problem, you should definitely do the below 2 problems first
 1. https://leetcode.com/problems/word-search - ([My Notes](https://github.com/eMahtab/word-search "My Notes"))
 2. https://leetcode.com/problems/implement-trie-prefix-tree - ([My Notes](https://github.com/eMahtab/implement-trie "My Notes"))
+
+## The Problem
+This problem is very similar to the https://leetcode.com/problems/word-search problem, but with two changes. 
+1. Now we are given an array of words (not a single word) to check if which words exists in the board.
+2. Finally we have to return the list of words which are found in the board. In the word search problem we were just returning boolean to represent if a word exists in the board or not.
+
+**❗️ : Note that all the strings in the `words` array are distinct**
