@@ -36,7 +36,9 @@ This problem is very similar to the https://leetcode.com/problems/word-search pr
 
 **❗️ : Note that all the strings in the `words` array are distinct**
 
-**Naive Solution :**
+
+### Naive Solution  - Not so good 😓
+
 We alreday know how to solve the word search problem, we can put a condition to add the word in the output list, if a word is found in the board. We will iterate over the given words array, so that all the words which are found in the board, will be added to output list. Although this approach will work, but it will be very time consuming, the reason is, we are initiating the entire search process again for every word in the `words` array. 
 
 e.g. Suppose we are given an array of 6 words `["random", "minimal", "there", "oat", "the", "oath"]`, suppose we alreday found that the word `the` exists in the board. Now rather than starting an entirely new search for word `there`, can't we try to find `there` while we actually found `the` in the board, this way we can save a lot of time. And the time we save, will become more significant when the board is very large, and also when the given words are very long.
