@@ -43,6 +43,6 @@ We alreday know how to solve the word search problem, we can put a condition to 
 
 e.g. Suppose we are given an array of 6 words `["random", "minimal", "there", "oat", "the", "oath"]`, suppose we alreday found that the word `the` exists in the board. Now rather than starting an entirely new search for word `there`, can't we try to find `there` while we actually found `the` in the board, this way we can save a lot of time. And the time we save, will become more significant when the board is very large, and also when the given words are very long.
 
-e.g. For example if we are given words `['centrifugal' , .... , 'centrifugalize', ....]`, if we found thatthat word `centrifugal` exists in the board, we can keep going and search for the word `centrifugalize` without losing our search progress. This way we will save a lot of time as we alreday found match for first 11 characters which is `centrifugal`, we will just have to find the match for next 3 characters `ize`.
+e.g. For example if we are given words `['centrifugal' , .... , 'centrifugalize', ....]`, if we found that the word `centrifugal` exists in the board, we can keep going and search for the word `centrifugalize` without losing our search progress. This way we will save a lot of time as we alreday found match for first 11 characters which is `centrifugal`, we will just have to find the match for next 3 characters `ize`.
 
 
