@@ -24,7 +24,7 @@ Note:
 1. All inputs are consist of lowercase letters a-z.
 2. The values of words are distinct.
 
-## Prerequisite
+## ⭐️⭐️ Prerequisite ⭐️⭐️
 Before you try to solve this problem, you should definitely do the below 2 problems first
-1. https://leetcode.com/problems/word-search - ( [My Notes](https://github.com/eMahtab/word-search "My Notes") )
-2. https://leetcode.com/problems/implement-trie-prefix-tree - ( [My Notes](https://github.com/eMahtab/implement-trie "My Notes") )
+1. https://leetcode.com/problems/word-search - ([My Notes](https://github.com/eMahtab/word-search "My Notes"))
+2. https://leetcode.com/problems/implement-trie-prefix-tree - ([My Notes](https://github.com/eMahtab/implement-trie "My Notes"))
