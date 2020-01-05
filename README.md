@@ -97,11 +97,11 @@ public static List<String> findWords(char[][] board, String[] words) {
         
         for(int i = 0; i < board.length; i++) {
             for(int j = 0; j < board[0].length; j++) {
-        	  char c = board[i][j];
-        	  int index = c - 'a';
-        	  if(root.children[index] != null) {
-        	     dfs(board, i, j, root, res); // <-- we are starting the search when first letter is matched
-        	  }
+        	char c = board[i][j];
+        	int index = c - 'a';
+        	if(root.children[index] != null) {
+        	   dfs(board, i, j, root, res); // <-- we are starting the search when first letter is matched
+        	}
             }
         }
         
