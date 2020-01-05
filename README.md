@@ -137,3 +137,22 @@ private static void dfs(char[][] board, int i, int j, TrieNode node, List<String
 	board[i][j] = ch; // <-- Once all 4 recursive calls return, set the original value
 }
 ```
+
+## Now lets test it 
+
+```java
+public static void main(String[] args) {
+	char[][] board = {
+			   {'o','a','a','n'},
+ 			   {'e','t','a','e'},
+			   {'i','h','k','r'},
+			   {'i','f','l','v'}
+		     };
+	String[] words = { "oath","oat" , "pea","pear", "eat","rain" };
+	System.out.println(findWords(board, words));
+}
+```
+The output is `[oat, oath, eat]` which is correct.
+
+## References
+https://www.youtube.com/watch?v=5Ha1nJ5rjrE
