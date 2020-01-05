@@ -46,3 +46,6 @@ e.g. Suppose we are given an array of 6 words `["random", "minimal", "there", "o
 e.g. For example if we are given words `['centrifugal' , .... , 'centrifugalize', ....]`, if we found that the word `centrifugal` exists in the board, we can keep going and search for the word `centrifugalize` without losing our search progress. This way we will save a lot of time as we alreday found match for first 11 characters which is `centrifugal`, we will just have to find the match for next 3 characters `ize`.
 
 
+😮 Lets try : Trie 😮
+
+
