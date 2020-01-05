@@ -108,3 +108,32 @@ public static List<String> findWords(char[][] board, String[] words) {
         return res;
  }
 ```
+
+## DFS
+
+```java
+private static void dfs(char[][] board, int i, int j, TrieNode node, List<String> res) {
+		if(node.word != null) {
+			res.add(node.word);
+			node.word = null;
+		}
+		
+		if(i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] == '#') {
+			return;
+		}
+		
+		char ch = board[i][j];
+		int index = board[i][j] - 'a';
+		if(node.children[index] == null) {
+			return;
+		}
+		
+		board[i][j] = '#'; // <-- Important, we don't want to visit an already visited cell
+		dfs(board, i, j + 1, node.children[index], res);
+		dfs(board, i, j - 1, node.children[index], res);
+		dfs(board, i - 1, j, node.children[index], res);
+		dfs(board, i + 1, j, node.children[index], res);
+		
+		board[i][j] = ch; // <-- Once all 4 recursive calls return, set the original value
+}
+```
