@@ -152,10 +152,11 @@ public static void main(String[] args) {
 	System.out.println(findWords(board, words));
 }
 ```
-#### Trie of words : ["oath", "oat", "pea", "pear", "eat", "rain"]
+### Trie of words : ["oath", "oat", "pea", "pear", "eat", "rain"]
 
 ![Trie of words](trie.PNG?raw=true "Trie of words")
 
+### In the above image, * indicates the `TrieNode` where a word ends e.g. eat, oat, oath, pea, pear, rain.
 
 The output is `[oat, oath, eat]` which is correct.
 
